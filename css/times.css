@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    font-family: 'labo 27px', sans-serif;
+    font-family: Roboto, Times New Roman, sans-serif;
     padding: 2px;
     margin: 10px;
 
@@ -25,7 +25,7 @@ h2,
 h3,
 h4 {
     /*font-family: font stack required for headings */
-    font-family: 'Roboto Slab';
+    font-family: Roboto Slab, Arial, serif;
 
 
 }
