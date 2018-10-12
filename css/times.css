@@ -33,9 +33,9 @@ h4 {
 p {}
 
 .container {
-    max-width: 100%;
+    max-width: 1500px;;
     height: auto;
-
+    margin: auto;
 }
 
 .subnav {
@@ -158,6 +158,8 @@ h1.story-title {
     float:left;
     width: 25%;
     margin: 10px;
+    position: relative;
+    bottom: 100px;
 }
 
 .story p {
