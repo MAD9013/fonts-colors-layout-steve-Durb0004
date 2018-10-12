@@ -1,84 +1,191 @@
 *,
 *::after,
-*::before{
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 16px;
     line-height: 1.6;
+
     /*font-family: font stack required for body text */
 }
-h1, h2, h3, h4{
+
+body {
+    font-family: 'labo 27px', sans-serif;
+    padding: 2px;
+    margin: 10px;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
     /*font-family: font stack required for headings */
+    font-family: 'Roboto Slab';
+
+
 }
-p{
-    
+
+p {}
+
+.container {
+    max-width: 100%;
+    height: auto;
+
 }
-.container{
-    
+
+.subnav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+
+
+
 }
-.subnav{
-    
+
+.subnav a {
+    margin-right: 10px;
+    color: hsl(250 0% 0%)
 }
-.subnav a{
-    
+
+
+.mainnav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+
 }
-.mainnav{
-    
+
+.mainnav a {
+    background-color: hsl(160 70% 90%);
+    font-size: 1.5rem;
+    border: double 4px hsl(250 80% 50%);
+    width: 25%;
+    position: relative;
+    font-size: 1.7vw;
+    color: hsl(250 0% 0%);
+
 }
-.mainnav a{
-    
+
+.mainnav a:visited {
+    text-decoration: line-through;
 }
-.masthead{
-    
+
+.masthead {
+    position: relative;
+    background-color: hsl(160 70% 90%);
+    max-width: 100%;
+    height: auto
 }
-.times-logo{
-    
+
+.times-logo {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+
 }
-.masthead h1{
-    
+
+.masthead h1 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 5vw;
+    border-right: double 4px hsl(250 80% 50%);
+    border-left: double 4px hsl(250 80% 50%);
+    border-top: double 4px hsl(250 80% 50%);
+    text-shadow: 2px 2px hsl(250 0% 0%);
+    color: hsl(160 70% 70%);
 }
-.content{
-    
+
+.content {
 }
-.content .story{
-    
+
+.content .story {
+
+
+
 }
-.story.lead-story{
-    
+article:nth-child(1){
+    margin-top: 10px;
+    border-left: dashed 4px hsl(160 70% 70%);
+    border-right: dashed 4px hsl(160 70% 70%);
 }
-h1.story-title{
-    
+article:nth-child(2){
+    border-top: dashed 4px hsl(160 70% 70%);
+    border-left: dashed 4px hsl(160 70% 70%);
+    border-right: dashed 4px hsl(160 70% 70%);
+
 }
-.story img{
-    
+.byline{
+    text-align: center;
+    text-decoration: underline;
 }
-.story p{
-    
+
+
+article:nth-child(3){
+    border-top: dashed 4px hsl(160 70% 70%);
+    border-left: dashed 4px hsl(160 70% 70%);
+    border-right: dashed 4px hsl(160 70% 70%);
+
 }
-.story blockquote{
-    quotes: "\201E" "\201D";
+
+.story.lead-story h1{
+    font-size: 3.5vw;
 }
-.story blockquote::before{
+
+
+
+
+
+h1.story-title {
+    text-shadow: 2px 2px hsl(250 0% 40%);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3vw;
+    color: hsl(160 70% 40%);
+
+}
+
+.story img {
+    float:left;
+    width: 25%;
+    margin: 10px;
+}
+
+.story p {
+    width: auto
+}
+
+.story blockquote {
+    quotes: "\201C""\201D";
+    text-decoration: underline
+}
+
+.story blockquote::before {
     content: open-quote;
+    font-weight: 600;
 }
-.story blockquote::after{
+
+.story blockquote::after {
     content: close-quote;
+    font-weight: 600;
+
+
 }
-.story p.byline{
-    
+
+.story p.byline {}
+
+p.byline span.author {
+
 }
-p.byline span.author{
-    
-}
-p.byline span.pub{
-    
-}
-.foot{
-    
-}
-.foot p{
-    
-}
+
+p.byline span.pub {}
+
+.foot {}
+
+.foot p {}
