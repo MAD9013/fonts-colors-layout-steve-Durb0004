@@ -6,8 +6,9 @@
     box-sizing: border-box;
 }
 
+
 html {
-    font-size: 16px;
+    font-size: 1vw;
     line-height: 1.6;
 
     /*font-family: font stack required for body text */
@@ -19,6 +20,20 @@ body {
     margin: 10px;
 
 }
+:root{
+    --fontOne: 2.441rem;
+    --fontTwo: 1.953rem;
+    --fontThree: 1.563rem;
+    --fontFour: 1.25rem;
+    --fontFive: 1rem;
+    --fontOSix: 0.8rem;
+    --fontSpecialOne: 3.5vw;
+    --fontSpecialTwo: 3vw;
+    --fontSpecialThree: 2.5vw;
+    --hueOne: 250;
+    --hueTwo: 160;
+
+}
 
 h1,
 h2,
@@ -26,6 +41,7 @@ h3,
 h4 {
     /*font-family: font stack required for headings */
     font-family: Roboto Slab, Arial, serif;
+
 
 
 }
@@ -49,7 +65,7 @@ p {}
 
 .subnav a {
     margin-right: 10px;
-    color: hsl(250 0% 0%)
+    color: hsl(var(--hueOne) 0% 0%)
 }
 
 
@@ -62,13 +78,13 @@ p {}
 }
 
 .mainnav a {
-    background-color: hsl(160 70% 90%);
+    background-color: hsl(var(--hueTwo) 70% 90%);
     font-size: 1.5rem;
-    border: double 4px hsl(250 80% 50%);
+    border: double 4px hsl(var(--hueOne) 80% 50%);
     width: 25%;
     position: relative;
     font-size: 1.7vw;
-    color: hsl(250 0% 0%);
+    color: hsl(var(--hueOne) 0% 0%);
 
 }
 
@@ -78,7 +94,7 @@ p {}
 
 .masthead {
     position: relative;
-    background-color: hsl(160 70% 90%);
+    background-color: hsl(var(--hueTwo) 70% 90%);
     max-width: 100%;
     height: auto
 }
@@ -94,12 +110,13 @@ p {}
 .masthead h1 {
     font-weight: 600;
     text-align: center;
-    font-size: 5vw;
-    border-right: double 4px hsl(250 80% 50%);
-    border-left: double 4px hsl(250 80% 50%);
-    border-top: double 4px hsl(250 80% 50%);
-    text-shadow: 2px 2px hsl(250 0% 0%);
+    font-size: var(--fontSpecialOne);
+    border-right: double 4px hsl(var(--hueOne) 80% 50%);
+    border-left: double 4px hsl(var(--hueOne) 80% 50%);
+    border-top: double 4px hsl(var(--hueOne) 80% 50%);
+    text-shadow: 2px 2px hsl(var(--hueOne) 0% 0%);
     color: hsl(160 70% 70%);
+
 }
 
 .content {
@@ -112,15 +129,22 @@ p {}
 }
 article:nth-child(1){
     margin-top: 10px;
-    border-left: dashed 4px hsl(160 70% 70%);
-    border-right: dashed 4px hsl(160 70% 70%);
+    border-left: dashed 4px hsl(var(--hueTwo) 70% 90%);
+    border-right: dashed 4px hsl(var(--hueTwo) 70% 90%);
     padding-bottom: 90px;
+
 }
 article:nth-child(2){
 
-    border-top: dashed 4px hsl(160 70% 70%);
-    border-left: dashed 4px hsl(160 70% 70%);
-    border-right: dashed 4px hsl(160 70% 70%);
+    border-top: dashed 4px hsl(var(--hueTwo) 70% 90%);
+    border-left: dashed 4px hsl(var(--hueTwo) 70% 90%);
+    border-right: dashed 4px hsl(var(--hueTwo) 70% 90%);
+
+}
+article:nth-child(3){
+    border-top: dashed 4px hsl(var(--hueTwo) 70% 90%);
+    border-left: dashed 4px hsl(var(--hueTwo) 70% 90%);
+    border-right: dashed 4px hsl(var(--hueTwo) 70% 90%);
 
 }
 .byline{
@@ -131,15 +155,10 @@ p{
 
 }
 
-article:nth-child(3){
-    border-top: dashed 4px hsl(160 70% 70%);
-    border-left: dashed 4px hsl(160 70% 70%);
-    border-right: dashed 4px hsl(160 70% 70%);
 
-}
 
 .story.lead-story h1{
-    font-size: 3.5vw;
+    font-size: var(--fontSpecialTwo);
 }
 
 
@@ -147,11 +166,11 @@ article:nth-child(3){
 
 
 h1.story-title {
-    text-shadow: 2px 2px hsl(250 0% 40%);
+    text-shadow: 2px 2px hsl(var(--hueOne) 0% 40%);
     text-align: center;
     text-decoration: underline;
-    font-size: 3vw;
-    color: hsl(160 70% 40%);
+    font-size: var(--fontSpecialThree);
+    color: hsl(var(--hueTwo) 70% 40%);
 
 }
 
@@ -160,7 +179,7 @@ h1.story-title {
     width: 25%;
     margin: 10px;
     position: relative;
-    bottom: 100px;
+    bottom: 40px
 }
 
 .story p {
