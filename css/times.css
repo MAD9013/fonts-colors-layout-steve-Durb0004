@@ -116,6 +116,7 @@ article:nth-child(1){
     border-right: dashed 4px hsl(160 70% 70%);
 }
 article:nth-child(2){
+
     border-top: dashed 4px hsl(160 70% 70%);
     border-left: dashed 4px hsl(160 70% 70%);
     border-right: dashed 4px hsl(160 70% 70%);
@@ -125,7 +126,9 @@ article:nth-child(2){
     text-align: center;
     text-decoration: underline;
 }
-
+p{
+    margin: 4px;
+}
 
 article:nth-child(3){
     border-top: dashed 4px hsl(160 70% 70%);
