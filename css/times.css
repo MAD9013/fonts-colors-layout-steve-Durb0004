@@ -128,7 +128,7 @@ article:nth-child(2){
     text-decoration: underline;
 }
 p{
-    margin: 4px;
+
 }
 
 article:nth-child(3){
@@ -164,10 +164,12 @@ h1.story-title {
 }
 
 .story p {
-    width: auto
+    width: auto;
+    margin: 4px;
 }
 
 .story blockquote {
+    margin: 4px;
     quotes: "\201C""\201D";
     text-decoration: underline
 }
