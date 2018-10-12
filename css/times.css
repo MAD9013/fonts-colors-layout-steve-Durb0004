@@ -112,9 +112,9 @@ p {}
 }
 article:nth-child(1){
     margin-top: 10px;
-    padding-bottom: 40px;
     border-left: dashed 4px hsl(160 70% 70%);
     border-right: dashed 4px hsl(160 70% 70%);
+    padding-bottom: 40px;
 }
 article:nth-child(2){
 
