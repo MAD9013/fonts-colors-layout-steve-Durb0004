@@ -5,6 +5,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+@media (min-width: 600px){
+    p{
+        /* this style applies to paragraphs if the device screen is over 600px wide */
+    }
+}
 
 
 html {
